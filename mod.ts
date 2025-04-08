@@ -1,8 +1,7 @@
+import {AllexEvent, IQueryable, IQueryRows, IQueryResult, IQueryResultAlike} from './deps.ts';
 import pg from 'npm:pg';
 const {Client} = pg;
 type ClientType = typeof Client;
-import {IQueryable, IQueryRows, IQueryResult, IQueryResultAlike} from '../sql-executor/mod.ts';
-import {AllexEvent} from "https://raw.githubusercontent.com/ts-libs/lib/refs/heads/main/event.ts";
 
 
 export interface IPgConfiguration {
